@@ -1,0 +1,5 @@
+Build:
+* docker build --no-cache -t buildmaster_sshd .
+
+Start:
+* docker run -d -p 8010:8010 -p 9989:9989 -P --name csibe-buildmaster buildmaster_sshd

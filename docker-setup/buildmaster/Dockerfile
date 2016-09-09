@@ -8,7 +8,7 @@ MAINTAINER Gabor Ballabas
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install -y bash git nano vim curl python python-virtualenv python-pip python-sqlalchemy python-migrate autoconf buildbot
+RUN apt-get install -y bash git nano vim curl openssh-server python python-virtualenv python-pip python-sqlalchemy python-migrate autoconf buildbot
 RUN apt-get install -y subversion
 
 RUN mkdir /var/run/sshd

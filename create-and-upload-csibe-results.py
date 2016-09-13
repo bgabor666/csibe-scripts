@@ -5,7 +5,8 @@ import shutil
 import subprocess
 import time
 
-csibe_buildbot_base_dir = "/home/bgabor/work/csibe/sandbox/clang-trunk"
+#csibe_buildbot_base_dir = "/home/bgabor/work/csibe/sandbox/clang-trunk"
+csibe_buildbot_base_dir = ".."
 csibe_base_dir = os.path.join(csibe_buildbot_base_dir, "csibe")
 build_dir = os.path.join(csibe_buildbot_base_dir, "build")
 results_dir = os.path.join(build_dir, "build")

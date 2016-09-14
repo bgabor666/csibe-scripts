@@ -1,0 +1,5 @@
+Build:
+* docker build --no-cache -t buildslave_sshd .
+
+Start:
+* docker run -d -P --name csibe-buildslave buildslave_sshd

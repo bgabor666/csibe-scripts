@@ -18,7 +18,7 @@ RUN sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/' /etc/ssh/ss
 
 ENV USER=csibe-slave
 
-RUN useradd -ms /bin/bash $USER
+RUN useradd -ms /bin/bash -u 1001 $USER
 RUN echo 'csibe-slave:csibe' | chpasswd
 
 # SSH login fix. Otherwise user is kicked off after login

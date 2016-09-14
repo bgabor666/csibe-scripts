@@ -17,7 +17,7 @@ RUN sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/' /etc/ssh/ss
 
 ENV USER=buildbot-master
 
-RUN useradd -ms /bin/bash $USER
+RUN useradd -ms /bin/bash -u 1001 $USER
 RUN echo 'buildbot-master:csibe' | chpasswd
 
 # SSH login fix. Otherwise user is kicked off after login
